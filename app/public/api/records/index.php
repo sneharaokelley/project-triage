@@ -14,7 +14,6 @@ if (isset($_GET['guid'])) {
   $stmt = $db->prepare('SELECT * FROM Patient');
   $stmt->execute();
 }
-
 $patients = $stmt->fetchAll();
 
 // Step 3: Convert to JSON
